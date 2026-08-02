@@ -1,13 +1,1 @@
-package:
-  name: "uuid"
-  dependencies:
-    - prelude
-    - aff
-    - effect
-    - maybe
-    - partial
-    - spec
-    - strings
-  test:
-    main: "Test.Main"
-    dependencies: []
+spago.go.yaml

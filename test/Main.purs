@@ -12,12 +12,12 @@ import Partial.Unsafe (unsafePartial)
 import Test.Spec (it, describe)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter.Console (consoleReporter)
-import Test.Spec.Runner (runSpec)
+import Test.Spec.Runner (runSpecPure)
 
 main :: Effect Unit
 main =
   launchAff_ do
-    runSpec [ consoleReporter ] do
+    runSpecPure [ consoleReporter ] do
       describe "UUID" do
         it "`genUUID` returns a uuid" do
           let
@@ -53,3 +53,4 @@ main =
 
             uuid = parseUUID uuidStr
           showUUID `shouldEqual` (show $ unsafePartial $ fromJust uuid)
+

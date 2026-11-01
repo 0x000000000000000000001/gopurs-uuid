@@ -1,7 +1,8 @@
 {
-  "name": "purescript-uuid",
+  "name": "gopurs-uuid",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "PureScript UUID library with a Go FFI for gopurs; npm tooling for the inherited JavaScript tests",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,10 +15,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spicydonuts/purescript-uuid"
+    "url": "https://github.com/0x000000000000000000001/gopurs-uuid.git"
   },
   "dependencies": {
     "uuid": "^8.3.2"
